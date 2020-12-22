@@ -33,6 +33,9 @@ void Print3(BinaryTreeNode* pRoot)
 
 		if (current == 0)
 		{
+			//当我们打印奇数行的时候，我们下一行打印的是偶数行
+			//偶数行总是先打印右子树、后打印左子树，所以我们在打印奇数行的时候应该在下一个打印栈中先存入左子树，后存入右子树
+			//此时我们在打印的时候才会实现先进后出的效果
 			if (pNode->m_pLeft != nullptr)
 			{
 				levels[next].push(pNode->m_pLeft);
@@ -45,6 +48,9 @@ void Print3(BinaryTreeNode* pRoot)
 		}
 		else
 		{
+			//当我们打印偶数行的时候，我们下一行打印的是奇数行
+			//奇数行总是先打印左子树、后打印右子树，所以我们在打印偶数行的时候应该在下一个打印栈中先存入右子树，后存入左子树
+			//此时我们在打印的时候才会实现先进后出的效果
 			if (pNode->m_pRight != nullptr)
 			{
 				levels[next].push(pNode->m_pRight);
@@ -59,6 +65,9 @@ void Print3(BinaryTreeNode* pRoot)
 		if (levels[current].empty())
 		{
 			cout << endl;
+			//更新打印栈和待打印栈
+			//current总是为打印栈
+			//next总是为待打印栈
 			current = 1 - current;
 			next = 1 - next;
 		}

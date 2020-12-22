@@ -31,6 +31,7 @@ void Print2(BinaryTreeNode* pRoot)
 		BinaryTreeNode* pNode = nodes.front();
 		cout << pNode->m_nValue;
 
+		//当我们打印一个节点的时候，我们将它的子节点存入队列中，nextLevel增加未打印节点数
 		if (pNode->m_pLeft != nullptr)
 		{
 			nodes.push(pNode->m_pLeft);
@@ -49,7 +50,10 @@ void Print2(BinaryTreeNode* pRoot)
 		if (toBePrinted == 0)
 		{
 			cout << endl;
+			//toBePrinted表示某一行中需要打印的节点数
+			//当toBePrinted为0的时候，表示这一行的节点数已经打印完毕，开始新一行的打印即可
 			toBePrinted = nextLevel;
+			//nextLevel总是表示我们下一行中需要打印的节点数，当我们需要打印下一行的时候，更新toBePrinted，nextLevel重置为0
 			nextLevel = 0;
 		}
 	}
