@@ -15,11 +15,10 @@ int  main1()
 
 int  main()
 {
-	int num = 1;
+	int num = 50;
 	while (num)
 	{
-		HANDLE handle = ShellExecute(0, (LPCWSTR)L"open", (LPCWSTR)L"https://www.yiban.cn/forum/article/show/article_id/151768623/channel_id/70975/puid/5370591/", (LPCWSTR)L"", (LPCWSTR)L"", SW_MINIMIZE);
-		CloseHandle(handle);
+		ShellExecute(0, (LPCWSTR)L"open", (LPCWSTR)L"https://lx.sust.edu.cn/info/1048/4747.htm", (LPCWSTR)L"", (LPCWSTR)L"", SW_MINIMIZE);
 		num--;
 	}
 
