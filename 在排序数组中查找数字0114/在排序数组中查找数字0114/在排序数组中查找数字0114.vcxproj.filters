@@ -18,5 +18,11 @@
     <ClCompile Include="count_K.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="lack_num.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="same_num.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

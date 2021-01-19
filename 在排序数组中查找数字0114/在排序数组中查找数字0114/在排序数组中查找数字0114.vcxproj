@@ -65,6 +65,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="count_K.cpp" />
+    <ClCompile Include="lack_num.cpp" />
+    <ClCompile Include="same_num.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

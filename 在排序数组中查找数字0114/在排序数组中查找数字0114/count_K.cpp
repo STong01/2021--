@@ -92,7 +92,7 @@ int GetNumberOfK(int* data, int length, int k)
 	return number;
 }
 
-int main()
+int main1()
 {
 	int data[] = { 1, 2, 3, 3, 3, 3, 4, 5 };
 	int length = sizeof(data) / sizeof(int*);
