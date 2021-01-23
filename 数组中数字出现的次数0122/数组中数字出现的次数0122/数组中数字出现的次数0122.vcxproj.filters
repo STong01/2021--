@@ -18,5 +18,8 @@
     <ClCompile Include="Once_num.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Once1_num.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

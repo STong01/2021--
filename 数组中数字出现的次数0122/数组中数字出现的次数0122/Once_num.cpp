@@ -55,7 +55,7 @@ void FindNumsApperOnce(int data[], int length, int* num1, int* num2)
 	}
 }
 
-int main()
+int main1()
 {
 	int data[] = { 2, 4, 3, 6, 3, 2, 5, 5 };
 	int length = sizeof(data) / sizeof(int);
