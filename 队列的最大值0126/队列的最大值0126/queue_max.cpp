@@ -45,7 +45,7 @@ vector<int>maxInWindows(const vector<int>& num, unsigned int size)
 	return maxInWindows;
 }
 
-int main()
+int main1()
 {
 
 	vector<int> num = { 2, 3, 4, 2, 6, 2, 5, 1 };
